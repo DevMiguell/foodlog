@@ -1,14 +1,9 @@
 <% content_for :title, "Foodlog" %>
 
-<h1>Foodlog</h1>
-
-<div id="entries">
+<div class="columns mt-6 is-centered" id="entries">
   <% @entries.each do |entry| %>
     <%= render entry %>
-    <p>
-      <%= link_to "Show this entry", entry %>
-    </p>
   <% end %>
 </div>
 
-<%= link_to "New entry", new_entry_path %>
+<%# <%= link_to "New entry", new_entry_path %>
