@@ -4,7 +4,7 @@ class CreateEntries < ActiveRecord::Migration[7.2]
       t.string :meal_type
       t.integer :calories
       t.integer :proteins
-      t.integer :carbohydrates
+      t.integer :carbohydratesx
       t.integer :fats
 
       t.timestamps
