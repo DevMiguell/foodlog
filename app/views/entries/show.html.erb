@@ -1,8 +1,11 @@
 <%= render @entry %>
 
 <div>
-  <%= link_to "Edit this entry", edit_entry_path(@entry) %> |
-  <%= link_to "Back to entries", entries_path %>
-
-  <%= button_to "Destroy this entry", @entry, method: :delete %>
+  <%= link_to "EDIT", edit_entry_path(@entry) %> |
+  <%= button_to "DELETE", entry_path(@entry), method: :delete, data: {
+    confirm: "Are you sure?", class: "button is-gray"
+  }  %>
+  <div class="column">
+    <!-- -->
+  </div>
 </div>
